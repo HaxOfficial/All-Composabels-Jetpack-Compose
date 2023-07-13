@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.SecondCompose"
+        tools:targetApi="31">
+
+        <activity android:name=".scaffold.ScaffoldActivity"
+            android:exported="true"/>
+
+        <activity android:name=".sharedviewmodel.SharedViewActivity"
+            android:exported="true"/>
+
+        <activity android:name=".searchview.SearchView"
+            android:exported="true"/>
+
+        <activity android:name=".suggestionchip.FilterChipLayout"
+            android:exported="true"/>
+
+        <activity android:name=".suggestionchip.SuggestionChips"
+            android:exported="true"/>
+
+        <activity android:name=".togglebutton.CustomToggleButton"
+            android:exported="true"/>
+
+        <activity android:name=".titlecard.CustomTitleCard"
+            android:exported="true"/>
+
+        <activity android:name=".tabview.TabView"
+            android:exported="true"/>
+
+        <activity android:name=".navigationdrawer.NavigationDrawer"
+            android:exported="true"/>
+
+        <activity android:name=".snackbar.SnackBar"
+            android:exported="true"/>
+
+        <activity android:name=".pickimage.PickImageGallery"
+            android:exported="true"/>
+
+        <activity android:name=".dialogs.DialogScreen"
+            android:exported="true"/>
+
+        <activity android:name=".checkbox.CheckBox"
+            android:exported="true"/>
+
+        <activity android:name=".radiobutton.RadioButton"
+            android:exported="true"/>
+
+        <activity android:name=".bottomsheet.BottomSheetActivity"
+            android:exported="true"/>
+
+        <activity android:name=".bottomnavigation.BottomNavigationActivity"
+            android:exported="true"/>
+
+        <activity android:name=".voyager.navigation.screen.VoyagerActivity"
+            android:exported="true"/>
+
+        <activity android:name=".navigation.AnotherActivity"
+            android:exported="true"/>
+
+        <activity android:name=".navigation.NavigationActivity"
+            android:exported="true"/>
+
+        <activity android:name=".viewpager.OnBoardingActivity"
+            android:exported="true"/>
+
+        <activity android:name=".retrofit.ui.RetrofitActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activity.RecyclerViewActivity"
+            android:exported="true"/>
+
+        <activity android:name=".activity.LoginActivity"
+            android:exported="true"/>
+
+        <activity android:name=".activity.SwitchAndManageState"
+            android:exported="true"/>
+
+        <activity android:name=".activity.DemoActivity"
+            android:exported="true">
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SecondCompose">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>
