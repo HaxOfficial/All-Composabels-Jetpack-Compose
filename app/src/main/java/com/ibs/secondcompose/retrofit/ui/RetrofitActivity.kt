@@ -34,6 +34,7 @@ class RetrofitActivity : ComponentActivity() {
             SecondComposeTheme {
                 Surface(color = MaterialTheme.colors.background) {
                     GetData(mainViewModel = mainViewModel)
+                    // API Calling
                 }
             }
         }
